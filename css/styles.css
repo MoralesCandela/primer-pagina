@@ -4,27 +4,42 @@ body{
 #titulo {
     background-color: lavender;
     font-family: cursive;
-    height: 50px;
+    height: 50%;
     margin: 0px;
     text-align: center;
 }
-#navegacion {
-    
-    list-style: none;
-    margin: 10px;
-    line-height: 10px;
+#navegacion > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(245, 204, 224) ;
+    margin: 0px;
+    line-height: 300%;
     font-family: Arial, Helvetica, sans-serif;
 }
+.contacto{
+    text-align: center;
+    width: 50%;
+}
+.about{
+    text-align: center;
+    width: 50%;
+}
 .primer-parrafo{
-    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #cuerpo-principal{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(250, 229, 233);
+    margin: 0px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
     font-style:normal;
 }
 #pie-de-pagina{
     background-color: lavender;
+    height: 50%;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
@@ -36,4 +51,10 @@ body{
 }
 .image-3{
     width: 300px;
+}
+@media all and (max-width: 600px) {
+    titulo, navegacion, cuerpo-principal, pie-de-pagina{
+        grid-column: auto;
+    }
+    
 }
